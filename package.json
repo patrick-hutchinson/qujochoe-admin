@@ -1,0 +1,46 @@
+{
+  "name": "qujochoe-admin",
+  "private": true,
+  "version": "1.0.0",
+  "main": "package.json",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "sanity dev --no-auto-updates",
+    "start": "sanity start",
+    "build": "sanity build --no-auto-updates",
+    "deploy": "sanity deploy",
+    "deploy-graphql": "sanity graphql deploy",
+    "deploy-studio": "sanity build && npx serve -s dist -l 3003"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/client": "6.27.2",
+    "@sanity/color-input": "4.0.1",
+    "@sanity/document-internationalization": "3.1.0",
+    "@sanity/icons": "3.4.0",
+    "@sanity/image-url": "1.1.0",
+    "@sanity/orderable-document-list": "1.2.2",
+    "@sanity/ui": "2.8.23",
+    "@sanity/vision": "3.99.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sanity": "3.99.0",
+    "sanity-plugin-internationalized-array": "3.0.1",
+    "styled-components": "6.1.15"
+  },
+  "devDependencies": {
+    "@sanity/eslint-config-studio": "4.0.0",
+    "@types/react": "18.0.25",
+    "eslint": "8.6.0",
+    "prettier": "3.0.2",
+    "typescript": "5.1.6"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 100,
+    "bracketSpacing": false,
+    "singleQuote": true
+  }
+}
