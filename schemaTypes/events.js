@@ -118,7 +118,7 @@ const eventsSchema = defineType({
       name: 'full_description_eng',
       title: 'Full Description (ENG)',
       type: 'array',
-      of: [{type: 'block'}],
+      of: [{type: 'block'}, {type: 'twoColumnBlock'}],
       group: ['single'],
     }),
     defineField({
